@@ -11,8 +11,8 @@ from random import randint
 ######## CHANGE THESE  (Or use `--email` and `--password` arguments) #########
 #USER_EMAIL = "email@example.com"
 #USER_PASSWORD = "password"
-USER_EMAIL = "mason.tseng@gmail.com"
-USER_PASSWORD = "rita0411"
+USER_EMAIL = "mail"
+USER_PASSWORD = "password"
 ##############################################################################
 
 # general args var instead of using multiple vars
