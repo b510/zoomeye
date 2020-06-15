@@ -1,0 +1,30 @@
+-h			顯示此幫助消息並退出
+-q			您的ZoomEye搜索
+-m			啟用多線程
+-p			搜索頁數（默認：5）
+--email EMAIL		您的ZoomEye電子郵件
+--password PASSWORD	您的ZoomEye密碼
+-s			將輸出保存到<文件>，默認文件名：results.txt
+-pl			搜索平台，接受"host"和"web"
+--port			在結果中包括端口號（例如，127.0.0.1:1337）（僅適用於host平台）
+--domain		輸出站點地址而不是IP。 （僅適用於web平台）
+
+chcp 950	<<big5(繁體中文windos預設)
+chcp 65001	<<utf8(萬國碼linux預設)
+
+%20=空白
+%2B=+
+%3A=:
+%22="
+
+zoomeyeapi ==> 只能爬40%
+
+EX(big5):
+python zoomeye_v1.0.py -p 1 -q "device:router country:china" --port
+python zoomeye_v1.0.py -p 1 -q "cidr:'1.0.38.0/24''+'country:'CN'" --port
+python zoomeye_v1.0.py -p 1 -q "/login.rsp'+'country:'CN'" --port -s DVR.txt
+EX(utf8):
+python zoomeye_v1.0.py -p 1 -q device:router%20%2Bcountry:china --port
+
+
+VIP(apikey)只能爬40%
