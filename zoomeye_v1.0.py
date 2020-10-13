@@ -29,7 +29,7 @@ ENDC = '\033[0m'
 
 #proxy
 global proxy
-proxy = {'http': 'socks5://127.0.0.1:9487', 'https': 'socks5://127.0.0.1:9487'}
+proxy = {'http': 'socks5://127.0.0.1:6666', 'https': 'socks5://127.0.0.1:6666'}
 
 # Safely stop the loops in case of CTRL+C
 global interrputed
